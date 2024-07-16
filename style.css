@@ -51,7 +51,6 @@ body{
     font-family: 'Poppins' , sans-serif;
     font-size: 0.88rem;
     user-select: none;
-    overflow-x: hidden;
     color: var(--color-dark);
     background-color: var(--color-background);
 }
@@ -113,12 +112,14 @@ b{
     color: var(--color-warning);
 }
 
+
+
 .container{
     display: grid;
-    width: 96%;
-    margin: 0 auto;
+    background-color: blue;
+    margin: auto;
     gap: 1.8rem;
-    grid-template-columns: 12rem auto 23rem;
+    grid-template-columns: repeat(3,1fr);
 }
 
 aside{
